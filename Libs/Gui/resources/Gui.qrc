@@ -5,6 +5,7 @@
   <file>GLCommon.glsl</file>
   <file>GLPhongShader.glsl</file>
   <file>RenderArrayShader.glsl</file>
+  <file>MIPRenderShader.glsl</file>
   <file>KdRenderArrayShader.glsl</file>
   <file>IsoContourShader.glsl</file>
 

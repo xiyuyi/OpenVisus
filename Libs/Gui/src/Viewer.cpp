@@ -66,6 +66,7 @@ For support : support@visus.net
 #include <Visus/PaletteNode.h>
 #include <Visus/RenderArrayNode.h>
 #include <Visus/OSPRayRenderNode.h>
+#include <Visus/MIPRenderNode.h>
 #include <Visus/ModelViewNode.h>
 #include <Visus/KdRenderArrayNode.h>
 #include <Visus/KdQueryNode.h>
@@ -2567,7 +2568,9 @@ Node* Viewer::addRender(String uuid, Node* parent, String palette)
     if (VisusModule::getModuleConfig()->readString("Configuration/VisusViewer/DefaultRenderNode/value") == "ospray") {
       render_node = new OSPRayRenderNode();
     } else {
-      render_node = new RenderArrayNode();
+      //render_node = new RenderArrayNode();
+      render_node = new MIPRenderNode();
+      std::cout << "----------------use mip renderer------------\n";
     }
     ret = render_node;
     render_node->setUUID(uuid);

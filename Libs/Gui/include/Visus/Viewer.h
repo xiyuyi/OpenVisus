@@ -73,6 +73,7 @@ class ScriptingNode;
 class PaletteNode;
 class RenderArrayNode;
 class OSPRayRenderNode;
+class MIPRenderNode;
 class ModelViewNode;
 class KdRenderArrayNode;
 class KdQueryNode;

@@ -29,7 +29,10 @@ set(NodeSources
 	./include/Visus/OSPRayRenderNode.h     
 	./src/OSPRayRenderNode.cpp   
 	./include/Visus/RenderArrayNode.h   
-	./src/RenderArrayNode.cpp        
+	./src/RenderArrayNode.cpp
+	./include/Visus/MIPRenderNode.h   
+	./src/MIPRenderNode.cpp
+	./resources/MIPRenderShader.glsl
 	./include/Visus/IsoContourNode.h
 	./include/Visus/IsoContourNodeView.h
 	./include/Visus/IsoContourRenderNode.h
